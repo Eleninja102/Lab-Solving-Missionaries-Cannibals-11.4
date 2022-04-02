@@ -104,7 +104,7 @@ bool Graph<Type>::isEdge(Type source, Type dest) {
     }
     for(int i = 0; i < edges[i].size(); i++){
         if(edges[srcPos][i] == dest){
-            std::cout << "test point";
+            //std::cout << "test point";
             return true;
         }
     }
@@ -144,7 +144,6 @@ ostream& operator << (ostream & out, const Graph<Type> &g) {
 */
 template <typename Type>
 vector<Type> Graph<Type>::getPath(Type source, Type dest) {
-    std::cout << source;
     vector<Type> solution;
     vector <vector<Type>> solutionExtra;
 
