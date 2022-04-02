@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DA48F1127F8C2A0003ED281 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA48F1027F8C2A0003ED281 /* main.cpp */; };
+		1DA48F1A27F8C2DB003ED281 /* MissionariesCannibalsTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1DA48F1927F8C2DB003ED281 /* MissionariesCannibalsTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,10 @@
 /* Begin PBXFileReference section */
 		1DA48F0D27F8C2A0003ED281 /* Lab: Solving Missionaries Cannibals 11.4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab: Solving Missionaries Cannibals 11.4"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DA48F1027F8C2A0003ED281 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1DA48F1727F8C2BC003ED281 /* MC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MC.h; sourceTree = "<group>"; };
+		1DA48F1827F8C2C7003ED281 /* GameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameState.h; sourceTree = "<group>"; };
+		1DA48F1927F8C2DB003ED281 /* MissionariesCannibalsTester.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MissionariesCannibalsTester.cpp; sourceTree = "<group>"; };
+		1DA48F1B27F8C30D003ED281 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,10 @@
 			isa = PBXGroup;
 			children = (
 				1DA48F1027F8C2A0003ED281 /* main.cpp */,
+				1DA48F1727F8C2BC003ED281 /* MC.h */,
+				1DA48F1827F8C2C7003ED281 /* GameState.h */,
+				1DA48F1927F8C2DB003ED281 /* MissionariesCannibalsTester.cpp */,
+				1DA48F1B27F8C30D003ED281 /* Graph.h */,
 			);
 			path = "Lab: Solving Missionaries Cannibals 11.4";
 			sourceTree = "<group>";
@@ -119,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA48F1A27F8C2DB003ED281 /* MissionariesCannibalsTester.cpp in Sources */,
 				1DA48F1127F8C2A0003ED281 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
