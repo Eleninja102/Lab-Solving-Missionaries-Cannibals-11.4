@@ -153,17 +153,13 @@ vector<Type> Graph<Type>::getPath(Type source, Type dest) {
         solution.push_back(dest);
     }
     for(int i = 0; i < edges[start].size(); i++){
-      
         GetPath(source, dest, solution, solutionExtra);
-  
     }
-    
     for(int i = 0; i < solutionExtra.size(); i++){
         if(solution.size() == 0){
             solution = solutionExtra[i];
         }else if(solution.size() > solutionExtra[i].size()){
             solution = solutionExtra[i];
-
         }
     }
     
@@ -176,16 +172,13 @@ template <typename Type>
 void Graph<Type>::GetPath(Type x, Type dest, vector<Type> solution, vector <vector<Type>> &solutionExtra){
     int start = getVertexPos(x);
     solution.push_back(x);
-
     for(int i = 0; i < edges[start].size(); i++){
-        
         if(edges[start][i] == dest){
             solution.push_back(edges[start][i]);
             solutionExtra.push_back(solution);
             return;
         }
         if(find(begin(solution), end(solution), edges[start][i]) == end(solution)){
-            //cout << edges[start][i];
            GetPath(edges[start][i], dest, solution, solutionExtra);
         }
     }
